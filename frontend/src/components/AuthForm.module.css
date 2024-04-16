@@ -1,0 +1,90 @@
+.form {
+  border-radius: 10px; /* 둥근 모서리 설정 */
+  max-width: 90rem;
+  max-height: 20rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+  
+  .form label,
+  .form input,
+  .form textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    padding: 0.25rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    background-color: var(--color-gray-300);
+    color: var(--color-gray-800);
+    border: none;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--color-gray-300);
+  }
+  
+  .actions button:hover {
+    background-color: black;
+  }
+  
+  .actions a:hover {
+    background-color: black;
+  }
+
+  /* ---------------------------------------------------------- */
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%;
+    margin-top: -1%;
+    border-radius: 30px; /* 둥근 모서리 설정 */
+    margin: 1px;
+  }
+  
+  .whiteBox {
+    position: relative; /* 부모 요소를 상대 위치로 설정합니다. */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-right: 0;
+    height: 250%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .otherElements {
+    background-color: antiquewhite; /* 다른 요소 배경색 설정 */
+    width: 30%; /* 다른 요소의 너비를 원하는 값으로 설정 */
+    padding: 20px; /* 내부 간격 설정 */
+    height: 250%; /* 다른 요소의 높이를 2배로 설정 */
+    border-top-right-radius: 10px; /* 왼쪽 위 모서리 둥글게 설정 */
+  border-bottom-right-radius: 10px;
+  }
+
+  .meatboy {
+    position: absolute; /* 절대 위치로 설정합니다. */
+  
+    top: 1; /* 위쪽으로 이동합니다. */
+  }

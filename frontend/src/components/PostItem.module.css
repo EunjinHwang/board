@@ -1,0 +1,38 @@
+.post {
+  max-width: 70rem;
+  margin: 2rem auto;
+  font-size: 20px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.post img {
+  width: 30rem;
+  border-radius: 4px;
+  float: left;
+  padding-right: 3%;
+  
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.actions a,
+.actions button {
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary-800);
+}
