@@ -5,7 +5,7 @@ function PostsList({posts}) {
   //const posts = useLoaderData();
   return (
     <div className={classes.posts}>
-      <h1>게시글</h1>
+      <h1 style={{color:'black'}}>게시글</h1>
       <ul className={classes.list}>
         {posts.map((post) => (
           <li key={post.id} className={classes.item}>

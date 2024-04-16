@@ -1,8 +1,9 @@
 const bodyParser = require('body-parser');
 const express = require('express');
+const mongoose = require('mongoose')
 
 const postRoutes = require('./routes/posts');
-const authRoutes = require('./routes/auth');
+//const authRoutes = require('./routes/auth');
 const cors = require('cors');
 
 const app = express();
@@ -15,7 +16,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(authRoutes);
+//app.use(authRoutes);
 
 app.use('/posts', postRoutes);
 
@@ -25,4 +26,12 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message });
 });
 
-app.listen(8080);
+app.listen(8080, () => {
+  mongoose.connect('mongodb://localhost:27017/enboard'
+  ).then(()=>{
+      console.log(`Example app listening on port 8080`)
+      console.log('connecting MongoDB')
+  }).catch((err)=>{
+      console.log(`${err}`)
+  })
+})
