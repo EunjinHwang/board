@@ -4,7 +4,7 @@ const { v4: generateId } = require('uuid');
 
 const {Reple} = require('../model/Reple.js')
 
-
+// id 작성글 아이디 , r_id : 댓글 아이디 
 //댓글들 불러오기
 router.get('/reple/:id', async (req, res, next) => {
     try {
